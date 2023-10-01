@@ -26,7 +26,7 @@ public class MathHOMEWORK {
             int choose = scanner.nextInt();
 
             if (choose == 3) {
-                System.out.println("O Calculator was closed.");
+                System.out.println(" Calculator was closed.");
                 break;
             }
             
@@ -39,9 +39,15 @@ public class MathHOMEWORK {
                 if (choose == 1) {
                     double result = ADD.calcular(num1, num2);
                     System.out.println("Result of add: " + result);
-        
-                }
-             }       
-        }
+                    }
+                    else {
+                        double result = Subtract.calcular(num1, num2);
+                        System.out.println("Result of Subtract: " + result);
+                    }
+             } else {
+                   System.out.println("Invalid option. Please choose 1, 2 or 3.");
+               }
+        }       
     }
-}
+    }
+
