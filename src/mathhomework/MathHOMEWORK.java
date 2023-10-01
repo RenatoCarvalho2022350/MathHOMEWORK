@@ -29,7 +29,19 @@ public class MathHOMEWORK {
                 System.out.println("O Calculator was closed.");
                 break;
             }
+            
+            if (choose == 1 || choose == 2) {
+                System.out.print("Tell me the first number: ");
+                double num1 = scanner.nextDouble();
+                System.out.print("Tell me the second number: ");
+                double num2 = scanner.nextDouble();
+
+                if (choose == 1) {
+                    double result = ADD.calcular(num1, num2);
+                    System.out.println("Result of add: " + result);
         
+                }
+             }       
         }
     }
 }
